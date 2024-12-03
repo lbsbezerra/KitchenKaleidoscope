@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500&family=Rubik:wght@300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: sans-serif;
+    
+}
+
+html {
+    font-size: 16px;
+}
+
+h3 {
+    font-family: "Noto Sans SC", sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+p {
+    font-family: "Noto Sans SC", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+
+/* footer css */
+
+.container {
+    display: grid;
+    grid-template-columns: 540px  1fr;
+    height: 400px;
+    padding: 30px;
+    background-color: #ededec;
+    overflow: hidden;
+}
+
+.container__left {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_logo a img{
+    height: 10rem;
+}
+
+.logo__text {
+    margin-left: 2.8rem; 
+    font-size: 1.2rem;
+    color: #2c2b1a;
+}
+
+
+.new_line {
+    display: block;
+    font-family: "Noto Sans SC", sans-serif;
+    font-weight: 300;
+}
+
+.icons {
+    display: flex;
+    gap: 2rem;
+    margin: 3.2rem 2.8rem;
+}
+
+.icon a img{
+    height: 2rem;
+}
+
+.container__right {
+    display: flex;
+    gap: 2rem;
+}
+
+.links {
+    margin-top: 10.5rem;
+    padding: 0 2rem;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-links li {
+    margin: 0.5rem;
+}
+
+.footer-links li a {
+    color: #2c2b1a;
+    font-size: 1.5rem;
+    margin: 5px 10px;
+    font-family: "Fredoka", sans-serif;
+    font-weight: 600;
+}
+
+.about_contact {
+    margin-top: 3.6rem;
+}
+
+.about_us h3{
+    padding-bottom: 10px;
+    font-family: "Fredoka", sans-serif;
+    font-weight: 500;
+    color: #2c2b1a;
+}
+
+.contact {
+    margin-top: 1.8rem;
+}
+
+.contact h3{
+    padding-bottom: 10px;
+    font-family: "Fredoka", sans-serif;
+    font-weight: 500;
+    color: #2c2b1a;
+}
+
+@media screen and (max-width: 768px) {
+    h3 {
+        font-size: 1.6rem;
+    }
+    
+    p {
+        font-size: 0.7rem;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 340px  1fr;
+        height: 300px;
+        padding: 15px;
+    }
+
+    .footer_logo a img{
+        height: 7rem;
+    }
+    
+    .logo__text {
+        margin-left: 2.2rem; 
+        font-size: 0.8rem;  
+    }
+    
+    .icons {
+        gap: 2rem;
+        margin: 3rem 2.2rem;
+    }
+    
+    .icon a img{
+        height: 1.6rem;
+    }
+    
+    .container__right {
+        gap: 0.2rem;
+    }
+    
+    .links {
+        margin-top: 7rem;
+        padding: 0 1rem;
+    }
+    
+    .footer-links li {
+        margin: 0.4rem;
+    }
+    
+    .footer-links li a {
+        font-size: 1.15rem;
+        margin: 0;
+    }
+    
+    .about_contact {
+        margin-top: 2rem;
+    }
+    
+    .about_us h3{
+        padding-bottom: 5px;
+    }
+    
+    .contact {
+        margin-bottom: 0.8rem;
+    }
+    
+    .contact h3{
+        padding-bottom: 10px;
+    }
+    
+}
+
+@media screen and (max-width: 425px) {
+    h3 {
+        font-size: 1.6rem;
+    }
+    
+    p {
+        font-size: 0.8rem;
+    }
+    
+    /* footer css */
+    
+    .container {
+        display: grid;
+        grid-template-columns: unset;
+        grid-template-rows: auto;
+        height: auto;
+        padding: 30px;
+    }
+    
+    .container__left {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .footer_logo a img{
+        height: 6.4rem;
+    }
+    
+    .logo__text {
+        margin-left: 2rem; 
+        font-size: 0.9rem;
+    }
+    
+    .icons {
+        gap: 2rem;
+        margin: 1rem 0;
+        justify-content: center;
+    }
+    
+    .icon a img{
+        height: 2rem;
+    }
+    
+    .container__right {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .links {
+        margin-top: 0rem;
+        padding: 0 2rem;
+    }
+    
+    .footer-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .footer-links li {
+        margin: 0.2rem;
+    }
+    
+    .footer-links li a {
+        font-size: 1rem;
+        margin: 10px;
+        font-family: "Fredoka", sans-serif;
+        font-weight: 600;
+    }
+    
+    .about_contact {
+        margin: 1rem 2rem 0;
+    }
+    
+    .about_us h3{
+        padding-bottom: 6px;
+    }
+    
+    .contact {
+        margin-bottom: 1rem;
+    }
+    
+    .contact h3{
+        padding-bottom: 6px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    h3 {
+        font-size: 1.2rem;
+    }
+    
+    p {
+        font-size: 0.6rem;
+    }
+    
+    /* footer css */
+    
+    .container {
+        display: grid;
+        grid-template-columns: unset;
+        grid-template-rows: auto;
+        height: auto;
+        padding: 10px;
+    }
+    
+    .container__left {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .footer_logo a img{
+        height: 6rem;
+    }
+    
+    .logo__text {
+        margin-left: 1.3rem; 
+        font-size: 0.8rem;
+    }
+    
+    .icons {
+        gap: 2rem;
+        margin: 1rem 0;
+        justify-content: center;
+    }
+    
+    .icon a img{
+        height: 2rem;
+    }
+    
+    .container__right {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .links {
+        margin-top: 0rem;
+        padding: 0 2rem;
+    }
+    
+    .footer-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .footer-links li {
+        margin: 0.2rem;
+    }
+    
+    .footer-links li a {
+        font-size: 0.85rem;
+        margin: 6px 10px;
+        font-family: "Fredoka", sans-serif;
+        font-weight: 600;
+    }
+    
+    .about_contact {
+        margin: 1rem 1.4rem 0;
+    }
+    
+    .about_us h3{
+        padding-bottom: 4px;
+    }
+    
+    .contact {
+        margin-bottom: 1rem;
+    }
+    
+    .contact h3{
+        padding-bottom: 4px;
+    }
+}

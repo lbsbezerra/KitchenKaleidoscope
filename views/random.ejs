@@ -1,0 +1,89 @@
+<!-- Header -->
+<%- include("partials/header.ejs") %>
+<link rel="stylesheet" href="/styles/search_random.css">
+
+<div class="surprise_dish">
+    <form method="post">
+        <div class="button">
+          <button id="button" type="submit" formaction="/surpriseDish">
+           <span></span>
+           Surprise me with a Dish!
+           <span></span>
+          </button>
+        </div>
+    </form>
+    <!-- recipe card items -->
+    <% if (locals.content) { %>
+        <div class="items-area">
+        <% content.results.forEach(result => { %>
+            <div class="item-bx">
+               <div class="items-container">
+                   <div class="item-area">
+                      <div class="img">
+                        <img src=<%= result.image %>  alt="">
+                      </div>
+                        <h3 class="item-title"
+                        onclick="openPopup()"
+                        data-id="<%= result.id %>"
+                        data-title="<%= result.title %>"
+                        data-image="<%= result.image %>"
+                        data-sourceName="<%= result.sourceName %>"
+                        data-ingredients='<%= JSON.stringify(result.extendedIngredients) %>'
+                        data-readyInMinutes="<%= result.readyInMinutes %>"
+                        data-servings="<%= result.servings %>">
+                        <%= result.title %>
+                        </h3>                      
+                    <p><%= result.dishTypes[0] %></p>
+                   </div>
+                   <div class="item_button">
+                    <a class="button" href=<%= result.sourceUrl %>>Find Out More</a>
+                   </div>    
+                </div>
+            </div>
+    <%    }); %>
+    <div class="popup_area" id="popup">
+        <div class="popup">
+            <div class="close" onclick="closePopup()">
+                <img src="/images/close.png" alt="">
+            </div>
+            <div class="popup_container">
+              <div class="img popup_img">
+                <img id="popupImg"  alt="">
+              </div>
+              <div class="text_area">
+                <h1 id="popupTitle"></h1>
+                <h4 id="popupSourceName"></h4>
+                <div class="info">
+                    <div>
+                       <h4 id="popupIngredientsCount"></h4></h4>
+                       <p>ingredients</p>
+                    </div>
+                    <div>
+                       <h4 id="popupReadyInMinutes"></h4>
+                       <p>minutes</p>
+                    </div>
+                    <div>
+                       <h4 id="popupServings"></h4>
+                       <p>servings</p>
+                    </div>
+                </div>
+                <div class="ingredients">
+                    <h3>Ingredients</h3>
+                    <ul id="popupIngredientsList">
+                     <!-- all ingredients dynamically are inserted here -->
+                    </ul>
+                </div>
+              </div>
+        </div>
+        </div>
+    </div>
+</div>
+    <% } %>
+    <% if (locals.error) { %>
+        <h1><%= error.status %>, <%= error.code %></h1>
+    <% } %>
+</div>
+
+<!-- Footer -->    
+<%- include("partials/footer.ejs") %>
+
