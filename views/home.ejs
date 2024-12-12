@@ -1,8 +1,8 @@
-<!-- Header -->
+<!-- Header with Dynamic Template -->
 <%- include("partials/header.ejs") %>
 <link rel="stylesheet" href="/styles/home.css">
 
-<!-- title page -->
+<!-- title page with responsive design -->
 <div class="first-pg">
     <div class="first-left">
         <div class="title">
@@ -10,11 +10,13 @@
            <h3>Discover Global Cuisine with our Kitchen Kaleidoscope!</h3>
         </div>
         <div class="button">
-           <button>
-            <span></span>
-            Search
-            <span></span>
-           </button>
+            <a href="/search">
+                <button>
+                    <span></span>
+                        Search
+                    <span></span>
+                </button>
+            </a>
         </div>
     </div>
     <div class="first-right">
@@ -22,33 +24,33 @@
     </div>
 </div>
 
-<!-- second page -->
+<!-- second page with responsive design -->
 
 <div class="card-page snaps_inline">
     <div class="cards">
         <img src="/images/pasta.jpg" alt="Pasta bowl"> 
         <div class="card-body">
-            <h1 class="card-title">QuickBites</h1>
-            <p class="card-info">Enjoy delicious meals made quickly and easily. Perfect for busy lifestyles, our QuickBites feature saves you time in the kitchen.</p>
+            <h1 class="card-title">Pasta Pronto</h1>
+            <p class="card-info">Savor the simplicity of pasta, prepared quickly and expertly. Perfect for busy lifestyles, serch for pastas for your kitchen.</p>
         </div>
     </div>
     <div class="cards">
-        <img src="/images/veggies.jpg" alt="Pasta bowl"> 
+        <img src="/images/veggies.jpg" alt="Veggies"> 
         <div class="card-body">
-            <h1 class="card-title">NutriDelights</h1>
-            <p class="card-info">Savor balanced, nutrient-packed meals with our NutriDelights recipes. Healthy eating meets great taste in every dish.</p>
+            <h1 class="card-title">Veggie Vibes</h1>
+            <p class="card-info">Energize your day with vibrant, plant-powered meals. Healthy eating meets great taste in every dish.</p>
         </div>
     </div>
     <div class="cards">
-        <img src="/images/tarkari.jpg" alt="Pasta bowl"> 
+        <img src="/images/tarkari.jpg" alt="Tarkari"> 
         <div class="card-body">
-            <h1 class="card-title">WorldPlates</h1>
-            <p class="card-info">Experience authentic global flavors with WorldPlates. Discover recipes from diverse cuisines, bringing the world to your kitchen.</p>
+            <h1 class="card-title">Taste the World</h1>
+            <p class="card-info">Savor the richness of international flavors. Discover recipes from diverse cuisines, bringing the world to your kitchen.</p>
         </div>
     </div>
 </div>
 
-<!-- third page -->
+<!-- third page with responsive design -->
 
 <div class="third-pg">
     <div class="text-part">
@@ -63,5 +65,5 @@
     </div> 
 </div>
 
-<!-- Footer -->    
+<!-- Footer with Dynamic Template-->    
 <%- include("partials/footer.ejs") %>

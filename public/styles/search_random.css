@@ -1,6 +1,8 @@
+/* Import Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500&family=Rubik:wght@300..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100..900&display=swap');
 
+/* Global Styles */
 *{
     padding: 0;
     margin: 0;
@@ -12,9 +14,10 @@
 }
 
 html {
-    font-size: 16px;
+    font-size: 16px; /* Base font size for the page */
 }
 
+/* Headings and Paragraph Styles */
 h1 {
     font-family: "Noto Sans SC", sans-serif;
     font-weight: 700;
@@ -30,6 +33,7 @@ p {
     font-weight: 300;
 }
 
+/* Surprise Dish Section Styles */
 .surprise_dish {
     position: relative;
     text-align: center;
@@ -41,8 +45,7 @@ p {
     padding: 1rem;
 }
 
-/* card item css */
-
+/* Card Items Area Styles */
 .items-area {
     display: flex;
     flex-wrap: wrap;
@@ -55,6 +58,7 @@ p {
     box-sizing: border-box;
 }
 
+/* Individual Item Container Styles */
 .items-container {
     display: flex;
     flex-direction: column;
@@ -68,6 +72,7 @@ p {
     border-radius: 15px;
 }
 
+/* Item Text Area Styles */
 .item-area {
     display: flex;
     flex-direction: column;
@@ -95,6 +100,7 @@ p {
     color: #2c2b1a;
 }
 
+/* Item Image Styles */
 .img {
     height: 260px;
     width: 260px;
@@ -108,8 +114,7 @@ p {
     border-radius: 10px;
 }
 
-/* popup card css */
-
+/* Popup Card Styles */
 .popup_area {
     position: absolute;
     top: 50%;

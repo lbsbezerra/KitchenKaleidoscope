@@ -1,22 +1,30 @@
+/* Import Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100..900&display=swap');
 
+/* Global Styles for our website */
 *{
+    /* Reset browser default margins and paddings */
     padding: 0;
     margin: 0;
+    /* Set 'box-sizing' for consistent width calculations */
     box-sizing: border-box;
+    /* Remove default text decoration and list styles */
     text-decoration: none;
     list-style: none;
+    /* Set a default font family */
     font-family: sans-serif;
     
 }
 
 html {
+    /* Set base font size for the page */
     font-size: 16px;
 }
 
-/* button css code */
-
+/* Button Styles */
+/* Base styles for all buttons */
 button{
+    /* Inherit font properties from parent element */
     font: inherit;
     padding: 0 2.4rem 0.15rem;
     background: #2c2b1a;
@@ -35,15 +43,16 @@ button{
 
 button:hover,
 button:focus-visible {
+    /* Change background color on hover and focus */
     background:#474528;
 }
 
 button > span {
+    /* Style child elements within the button */
     position: absolute;
     width: 33.333%;
     height: 100%;
     z-index: -1;
-
     background: transparent;
     opacity: 0.5;
 }
@@ -92,9 +101,9 @@ button:has(:last-child:active)::before {
     transition: transform 500ms, opacity 250ms;
 }
 
-/* card button css */
-
+/* Card Button Styles */
 .item_button {
+    /* Style for card buttons */
     display: flex;
     font: inherit;
     padding: 0.4rem 0.15rem;
@@ -111,10 +120,13 @@ button:has(:last-child:active)::before {
 }
 
 .item_button:hover{
+    /* Change background color on hover */
     background:#00db1f;
 }
 
+/* Link Styles */
 a {
+    /* Style for anchor links */
     text-decoration: none;
     color: #ededec;
     font-size: 1.4rem;
@@ -123,18 +135,21 @@ a {
     padding-bottom:0.15rem;
 }
 
+/* Responsive Styles */
 @media (max-width: 768px) {
-
+    /* Adjust button styles for smaller screens */
     button{
         padding: 0 1.4rem 0.15rem;
         font-size: 1.2rem;
     }
 
+    /* Adjust card button styles for smaller screens */
     .item_button {
         padding: 0.6rem 0.15rem;
         height: 34px;
     }
     
+    /* Adjust link styles for smaller screens */
     a {
         font-size: 1.2rem;
     }
@@ -142,7 +157,7 @@ a {
 }
 
 @media (max-width: 425px) {
-
+    /* Further adjust button styles for even smaller screens */
     button{
         padding: 0 1rem 0.15rem;
         font-size: 1rem;
